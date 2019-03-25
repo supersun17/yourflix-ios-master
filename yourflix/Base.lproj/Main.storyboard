@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,7 +34,6 @@
                 <navigationController navigationBarHidden="YES" id="MJ2-Fi-fpN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="TV" id="HFW-Kc-4fD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNC-LV-Cd4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="711" y="-277"/>
         </scene>
-        <!--TV-->
+        <!--View Controller-->
         <scene sceneID="eHl-ue-Rdl">
             <objects>
                 <collectionViewController id="77L-WR-Q8U" customClass="TVViewController" customModule="yourflix" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +87,6 @@
                             <outlet property="delegate" destination="77L-WR-Q8U" id="H65-Xy-fFc"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="TV" id="hXX-Zx-Kit"/>
                     <navigationItem key="navigationItem" id="ZgI-4z-Fhe"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oI5-Vm-iF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,7 +99,6 @@
                 <navigationController navigationBarHidden="YES" id="MxX-O3-R9P" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Movies" id="Nlg-QV-Sci"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQ3-4i-X66">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -115,7 +113,7 @@
         <scene sceneID="5kH-2t-ZMd">
             <objects>
                 <collectionViewController id="Moz-Ce-vL1" customClass="MoviesController" customModule="yourflix" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Hsd-pk-osb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Hsd-pk-osb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
